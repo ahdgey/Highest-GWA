@@ -19,9 +19,10 @@ def student():
 
             #From the first line to the end, read student_gwa.txt
             for line in input_gwa:
-                name_and_surname, gwa = line.strip(). split(",")
+                name_surname, gwa = line.strip(). split(",")
                 gwa = float(gwa)
-                student_data[name_and_surname] = gwa
+                student_data[name_surname] = gwa
 
-                #
+                #Get the students minimum GWA
+
 
