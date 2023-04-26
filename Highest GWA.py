@@ -12,3 +12,8 @@ print("\033[1;32m\nShe's from BSCPE 1-4")
 print("-" * 90)
 
 def student():
+    #Open Student GWA.txt (read)
+        with open("student_gwa.txt", "r") as input_gwa:
+                student_data = {}
+
+                
