@@ -24,5 +24,9 @@ def student():
                 student_data[name_surname] = gwa
 
                 #Get the students minimum GWA
+                student_low_gwa = min(student_data, key = student_data.get)
+                low_gwa = student_data[student_low_gwa]
+
+            
 
 
