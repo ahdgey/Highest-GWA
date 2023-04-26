@@ -16,4 +16,10 @@ def student():
         with open("student_gwa.txt", "r") as input_gwa:
                 student_data = {}
 
-                
+                #From the first line to the end, read student_gwa.txt
+                for line in input_gwa:
+                    name_and_surname, gwa = line.strip(). split(",")
+                    gwa = float(gwa)
+                    student_data[name_and_surname] = gwa
+
+                    
