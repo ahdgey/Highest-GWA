@@ -12,14 +12,16 @@ print("\033[1;32m\nShe's from BSCPE 1-4")
 print("-" * 90)
 
 def student():
-    #Open Student GWA.txt (read)
-        with open("student_gwa.txt", "r") as input_gwa:
-                student_data = {}
+        
+#Open Student GWA.txt (read)
+    with open("student_gwa.txt", "r") as input_gwa:
+            student_data = {}
 
-                #From the first line to the end, read student_gwa.txt
-                for line in input_gwa:
-                    name_and_surname, gwa = line.strip(). split(",")
-                    gwa = float(gwa)
-                    student_data[name_and_surname] = gwa
+            #From the first line to the end, read student_gwa.txt
+            for line in input_gwa:
+                name_and_surname, gwa = line.strip(). split(",")
+                gwa = float(gwa)
+                student_data[name_and_surname] = gwa
 
-                    
+                #
+
