@@ -14,8 +14,6 @@ A Python program that read a file containing the name of 20 students together wi
 1. In the directory where the Python software is located, create a text file called Student GWA.txt.
 2. Using commas as space, enter the names of 20 students, together with their surnames and GWAs, in the Student GWA.txt file. In the following format: Name, Surname, GWA, each line must include the data for one student.
 3. Run your Python program.
-4. The software will use the Student GWA.txt file to identify the student with the highest GWA.
-5. The student with the highest GWA will be named and their GWA will be output by the program.
-
-
-
+4. The program will display the title of the activity, programmers name, and her course and section.
+5. The software will use the Student GWA.txt file to identify the student with the highest GWA.
+6. The student with the highest GWA will be named and their GWA will be output by the program.
