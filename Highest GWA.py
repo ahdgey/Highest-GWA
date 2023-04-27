@@ -19,7 +19,7 @@ def student():
 
             #From the first line to the end, read Student GWA.txt
             for line in input_gwa:
-                name_surname, gwa = line.strip(). split(",")
+                name_surname, gwa = line.strip().split(",")
                 gwa = float(gwa)
                 student_data[name_surname] = gwa
 
