@@ -21,14 +21,15 @@ def student():
             for line in input_gwa:
                 name_surname, gwa = line.strip().split(",")
                 gwa = float(gwa)
-                student_data[name_surname] = gwa
+                student_data[name_surname] = float(gwa)
 
                 #Get the students minimum GWA
-                student_low_gwa = min(student_data, key = student_data.get)
-                low_gwa = student_data[student_low_gwa]
+                student_highest_gwa = min(student_data, key = student_data.get)
+                highest_gwa = student_data[student_highest_gwa]
 
             #Output, print the students name and surname together with their GWA
-            print("Among all the 20 students, he/she got the highest GWA: ", + student_low_gwa + "\nHis/Her GWA is: " + str(low_gwa))
+            print("\033[0;35mAmong all the 20 students, he/she got the highest GWA: \033[1;37m", + student_highest_gwa)
+            print("\033[0;35mHis/Her GWA is: \033[1;37m" + str(highest_gwa))
 
     student()
 
