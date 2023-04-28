@@ -23,16 +23,12 @@ def student():
             gwa = float(gwa)
             student_data[name_surname] = gwa
 
-        #Get the students maximum GWA
-        student_highest_gwa = max(student_data, key = student_data.get)
+        #Get the students minimum GWA
+        student_highest_gwa = min(student_data, key = student_data.get)
         highest_gwa = student_data[student_highest_gwa]
 
         #Output, print the students name and surname together with their GWA
         print("\033[0;35mAmong all the 20 students, he/she got the highest GWA: \033[1;37m" + student_highest_gwa)
         print("\033[0;35mHis/Her GWA is: \033[1;37m" + str(highest_gwa))
 
-    student()
-
-            
-
-
+student()
