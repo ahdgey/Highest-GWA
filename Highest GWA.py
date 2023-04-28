@@ -13,25 +13,25 @@ print("-" * 90)
 
 def student():
         
-#Open Student GWA.txt (read)
+    #Open Student GWA.txt (read)
     with open("Student GWA.txt", "r") as input_gwa:
-            student_data = {}
+        student_data = {}
 
-            #From the first line to the end, read Student GWA.txt
-            for line in input_gwa:
-                name_surname, gwa = line.strip().split(",")
-                gwa = float(gwa)
-                student_data[name_surname] = float(gwa)
+        #From the first line to the end, read Student GWA.txt
+        for line in input_gwa:
+            name_surname, gwa = line.strip().split(",")
+            gwa = float(gwa)
+            student_data[name_surname] = float(gwa)
 
-                #Get the students minimum GWA
-                student_highest_gwa = min(student_data, key = student_data.get)
-                highest_gwa = student_data[student_highest_gwa]
+            #Get the students minimum GWA
+            student_highest_gwa = min(student_data, key = student_data.get)
+            highest_gwa = student_data[student_highest_gwa]
 
-            #Output, print the students name and surname together with their GWA
-            print("\033[0;35mAmong all the 20 students, he/she got the highest GWA: \033[1;37m", + student_highest_gwa)
-            print("\033[0;35mHis/Her GWA is: \033[1;37m" + str(highest_gwa))
+        #Output, print the students name and surname together with their GWA
+        print("\033[0;35mAmong all the 20 students, he/she got the highest GWA: \033[1;37m", + student_highest_gwa)
+        print("\033[0;35mHis/Her GWA is: \033[1;37m" + str(highest_gwa))
 
-    student()
+student()
 
             
 
